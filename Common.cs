@@ -60,14 +60,7 @@ namespace Qif
         internal static DateTime GetDateTime(string value)
         {
             // Prepare the return value
-            DateTime result = new DateTime();
-
-            // If parsing the date string fails
-            if (DateTime.TryParse(GetRealDateString(value), CultureInfo.CurrentCulture, DateTimeStyles.None, out result) == false)
-            {
-                // Identify that the value couldn't be formatted
-                throw new InvalidCastException(Resources.InvalidDateFormat);
-            }
+            DateTime result = DateTime.ParseExact(GetRealDateString(value), "dd/MM/yyyy", CultureInfo.InvariantCulture);
 
             // Return the date value
             return result;
