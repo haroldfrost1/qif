@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>Qif</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Harold Frost</Authors>
+    <Company>Seansnails World</Company>
   </PropertyGroup>
 
 </Project>
