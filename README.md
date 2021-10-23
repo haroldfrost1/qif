@@ -14,3 +14,6 @@ qifDom.Import(someFilePath);
 // etc...
 ```
 Please refer to the docs in code
+
+### Limitation
+The date format of the imported .qif file is currently hard-coded to dd/MM/yyyy. Will fix if needed. Please submit an issue or PR 
